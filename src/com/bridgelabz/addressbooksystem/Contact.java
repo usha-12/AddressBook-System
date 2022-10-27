@@ -5,13 +5,6 @@ public class Contact {
    private String lastName;
    private String phoneNumber;
    private String emailID;
-    public Contact(String firstName, String lastName,String phoneNumber, String emailID) {
-        super();
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneNumber = phoneNumber;
-        this.emailID = emailID;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -42,6 +35,11 @@ public class Contact {
     }
     public void setEmailID(String emailID) {
         this.emailID = emailID;
+    }
+    @Override
+    public String toString() {
+        return "\n..........Contact Info.........\nFirst Name : " + firstName + "\nLast Name : " + lastName + "\nPhone Number : "
+                + phoneNumber + "\nEmail ID : " + emailID;
     }
 
 }
