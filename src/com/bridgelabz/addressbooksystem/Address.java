@@ -1,2 +1,4 @@
-package com.bridgelabz.addressbooksystem;public class Address {
+package com.bridgelabz.addressbooksystem;
+
+public class Address {
 }

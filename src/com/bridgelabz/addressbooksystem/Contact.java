@@ -1,2 +1,4 @@
-package com.bridgelabz.addressbooksystem;public class Contact {
+package com.bridgelabz.addressbooksystem;
+
+public class Contact {
 }
