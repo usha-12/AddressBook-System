@@ -51,5 +51,4 @@ public class Contact {
         return "\n..........Contact Info.........\nFirst Name : " + firstName + "\nLast Name : " + lastName + "\nPhone Number : "
                 + phoneNumber + "\nEmail ID : " + emailID + "\nAddress : "+address;
     }
-
 }
