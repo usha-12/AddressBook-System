@@ -1,10 +1,19 @@
 package com.bridgelabz.addressbooksystem;
 
 public class Contact {
-   private String firstName;
+    private String firstName;
    private String lastName;
    private String phoneNumber;
    private String emailID;
+   private Address address;// composition // we need to map the relationship bt two
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -36,10 +45,11 @@ public class Contact {
     public void setEmailID(String emailID) {
         this.emailID = emailID;
     }
+
     @Override
     public String toString() {
         return "\n..........Contact Info.........\nFirst Name : " + firstName + "\nLast Name : " + lastName + "\nPhone Number : "
-                + phoneNumber + "\nEmail ID : " + emailID;
+                + phoneNumber + "\nEmail ID : " + emailID + "\nAddress : "+address;
     }
 
 }

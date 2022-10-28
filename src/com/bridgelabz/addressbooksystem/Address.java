@@ -2,9 +2,9 @@ package com.bridgelabz.addressbooksystem;
 
 public class Address {
    private String city;
-    private String state;
+   private String state;
    private String zip;
-    public String getCity() {
+   public String getCity() {
         return city;
     }
 
