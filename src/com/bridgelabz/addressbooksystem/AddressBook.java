@@ -37,6 +37,7 @@ public class AddressBook {
         newContact.setAddress(address);// assigning address to contact // encapsulation
         displayContact(newContact);
         editContact(newContact);
+        deleteContact(newContact);
     }
 
     public void displayContact(Contact contact) {
@@ -115,5 +116,16 @@ public class AddressBook {
         } else {
             System.out.println("\nInvalid Input.\nPlease try again!");
         }
+    }
+    public void deleteContact(Contact contact) {
+        contact.setFirstName(null);
+        contact.setLastName(null);
+        contact.getAddress().setCity(null);
+        contact.getAddress().setState(null);
+        contact.getAddress().setZip(null);
+        contact.setPhoneNumber(null);
+        contact.setEmailID(null);
+        System.out.println("\n\nHere is the updated Address Book.");
+        displayContact(contact);
     }
 }
