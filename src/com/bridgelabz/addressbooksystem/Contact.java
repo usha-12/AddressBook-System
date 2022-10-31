@@ -1,7 +1,6 @@
 package com.bridgelabz.addressbooksystem;
 
 public class Contact {
-
     String firstName;
     String lastName;
     String address;
